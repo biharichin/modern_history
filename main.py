@@ -83,7 +83,7 @@ def main():
             try:
                 bot.send_poll(
                     chat_id=chat_id,
-                    question=q['question'],
+                    question=f"Question {i + 1}: {q['question']}",
                     options=q['options'],
                     type='quiz',
                     correct_option_id=q['correct_option_index'],
